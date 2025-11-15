@@ -83,8 +83,7 @@ function Project() {
             <span className="text-[#cd3cf5] mr-1"> Projects</span>
           </h1>
           <p className="text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base max-w-2xl mx-auto">
-           this is the projects i have done so far.lorem ipsum dolor sit amet consectetur
-            adipisicing elit.
+           This is the Projects i have done so far.
           </p>
         </header>
       </div>

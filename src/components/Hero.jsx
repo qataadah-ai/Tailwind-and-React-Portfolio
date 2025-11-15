@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Myphoto from "../assets/Myphoto.png";
-
+import CV from "../assets/CV.pdf";
 export default function Hero() {
   return (
     <div className="relative overflow-hidden sm:min-h-[600px] flex flex-col items-center">
@@ -46,23 +46,54 @@ pb-6 md:pb-24 pt-20 md:pt-36 mt-10 md:mt-0 z-10"
 
           {/* Paragraph with controlled width */}
           <p className="text-base sm:text-lg text-gray-200 mb-6 max-w-[480px] leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio
-            ab libero voluptatem laudantium adipisci similique unde explicabo
-            corrupti ea, voluptas ullam. Lorem ipsum dolor sit amet.
+            I build intuitive, accessible, and high-performance user interfaces
+            using React and Tailwind. I turn designs into reusable components,
+            optimize for fast load times and responsive layouts, and follow
+            accessibility best practices so products work well for everyone.
+            I enjoy collaborating with designers and backend teams to ship
+            polished user experiences quickly.
           </p>
 
           {/* Social icons */}
-          <div className="flex space-x-5 text-3xl text-white mb-6">
-            <FaFacebook className="hover:text-blue-500 cursor-pointer" />
-            <FaInstagram className="hover:text-pink-500 cursor-pointer" />
-            <FaGithub className="hover:text-gray-400 cursor-pointer" />
-            <FaLinkedin className="hover:text-blue-400 cursor-pointer" />
-          </div>
+        <div className="flex space-x-5 text-3xl text-white mb-6">
+  <a 
+    href="https://www.facebook.com/share/17gRLqS3pE/ " 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaFacebook className="hover:text-blue-500 cursor-pointer" />
+  </a>
+
+  <a 
+    href="https://www.instagram.com/qataa_dah?igsh=MXY4NmF4anRvMWdsMQ== " 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaInstagram className="hover:text-pink-500 cursor-pointer" />
+  </a>
+
+  <a 
+    href="https://github.com/qataadah-ai" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaGithub className="hover:text-gray-400 cursor-pointer" />
+  </a>
+
+  <a 
+    href="https://www.linkedin.com/in/qazi-qataadah-9072b5382 " 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaLinkedin className="hover:text-blue-400 cursor-pointer" />
+  </a>
+</div>
+
 
           {/* Button */}
-          <a href="#" download>
+          <a href={CV} download="Qazi_Qataadah_Afridi_CV.pdf" aria-label="Download CV (PDF)">
             <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg">
-              Download Cv
+              Download CV
             </button>
           </a>
         </section>
