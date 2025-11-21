@@ -1,6 +1,6 @@
 
 
-#React & Tailwind Portfolio
+React & Tailwind Portfolio
 
 This repository contains a modern and responsive Portfolio Website built using React and Tailwind CSS.
 The project focuses on clean UI, fast performance, reusable components, and developer-friendly structure.
