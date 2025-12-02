@@ -10,10 +10,10 @@ The project focuses on clean UI, fast performance, reusable components, and deve
 
 Installation & Setup
 # Clone the repository
-git clone https://github.com/yourusername/your-portfolio.git
+git clone https://github.com/qataadah-ai/Tailwind-and-React-Portfolio
 
 # Navigate to project folder
-cd your-portfolio
+cd Portfolio
 
 # Install dependencies
 npm install
