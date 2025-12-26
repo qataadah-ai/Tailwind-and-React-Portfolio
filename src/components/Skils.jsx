@@ -15,20 +15,20 @@ const skilsData = [
   { id: 6, image: reactImage, title: "React", description: "Component-driven development with React.", color: "#61DAFB" },
 ];
 
-const SkillBox = ({ image, title, description, color }) => (
+const SkillBox = ({ skill}) => (
   <article className="bg-gray-800 p-3 sm:p-4 w-full rounded-lg shadow-lg text-center hover:shadow-[0_8px_40px_rgba(0,0,0,0.6)] transition-all duration-300">
     <figure className="flex justify-center mb-4">
       <span
         className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center"
-        style={{ backgroundColor: color }}
+        style={{ backgroundColor: skill.color }}
       >
-        <img src={image} alt={title} className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
+        <img src={skill.image} alt={skill.title} className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
       </span>
     </figure>
     <header>
-      <h3 className="text-lg sm:text-xl font-semibold mb-2">{title}</h3>
+      <h3 className="text-lg sm:text-xl font-semibold mb-2">{skill.title}</h3>
     </header>
-    <p className="text-gray-400 text-sm sm:text-base">{description}</p>
+    <p className="text-gray-400 text-sm sm:text-base">{skill.description}</p>
   </article>
 );
 
@@ -63,10 +63,7 @@ function Skils() {
         {skilsData.map((skill) => (
           <SkillBox
             key={skill.id}
-            image={skill.image}
-            title={skill.title}
-            description={skill.description}
-            color={skill.color}
+           skill={skill}
           />
         ))}
       </section>
