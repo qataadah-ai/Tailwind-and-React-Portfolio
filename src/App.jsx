@@ -8,6 +8,7 @@ import Hero from './components/Hero.jsx'
 import Skils from './components/Skils.jsx'
 import Project from './components/Project.jsx'
 import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   useEffect(()=>{
@@ -20,6 +21,7 @@ function App() {
      <Skils/>
      <Project/>
      <Contact/>
+     <Footer/>
     
    </main>
   )
